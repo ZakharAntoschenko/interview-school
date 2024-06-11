@@ -1,0 +1,24 @@
+<div id='new-section-student'>
+  <%= form_with model: @section_student, url: student_section_students_path(@student), create_remote: true do |form| %>
+    <% if @section_student.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@section_student.errors.count, "error") %> prohibited this section student from being saved:</h2>
+
+        <ul>
+          <% @section_student.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :section %>
+      <%= form.select :section_id, options_from_collection_for_select(Section.all.where.not(id: @student.section_ids), :id, :display_name) %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit 'Add' %>
+    </div>
+  <% end %>
+</div>

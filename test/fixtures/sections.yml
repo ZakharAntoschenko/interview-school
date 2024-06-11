@@ -1,0 +1,33 @@
+everyday_math_section:
+  subject: math
+  teacher: math_teacher
+  classroom: little_auditorium
+  schedule_kind: "everyday"
+  time_duration_kind: "sixty_mins"
+  start_time: "09:30 AM"
+
+three_days_math_section:
+  subject: math
+  teacher: math_teacher
+  classroom: little_auditorium
+  schedule_kind: "monday_wednesday_friday"
+  time_duration_kind: "sixty_mins"
+  start_time: "10:00 AM"
+
+two_days_math_section:
+  subject: math
+  teacher: math_teacher
+  classroom: little_auditorium
+  schedule_kind: "tuesday_thursday"
+  time_duration_kind: "sixty_mins"
+  start_time: "02:00 PM"
+
+everyday_english_section:
+  subject: english
+  teacher: english_teacher
+  classroom: big_auditorium
+  schedule_kind: "everyday"
+  time_duration_kind: "sixty_mins"
+  start_time: "01:00 PM"
+
+
